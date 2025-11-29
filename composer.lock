@@ -6963,16 +6963,16 @@
         },
         {
             "name": "pestphp/pest",
-            "version": "v4.1.5",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "27aa305897a808894548f1fdb6c7c46763c0fabf"
+                "reference": "ae419afd363299c29ad5b17e8b70d118b1068bb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/27aa305897a808894548f1fdb6c7c46763c0fabf",
-                "reference": "27aa305897a808894548f1fdb6c7c46763c0fabf",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/ae419afd363299c29ad5b17e8b70d118b1068bb4",
+                "reference": "ae419afd363299c29ad5b17e8b70d118b1068bb4",
                 "shasum": ""
             },
             "require": {
@@ -6985,7 +6985,7 @@
                 "pestphp/pest-plugin-profanity": "^4.2.0",
                 "php": "^8.3.0",
                 "phpunit/phpunit": "^12.4.4",
-                "symfony/process": "^7.3.4"
+                "symfony/process": "^7.4.0|^8.0.0"
             },
             "conflict": {
                 "filp/whoops": "<2.18.3",
@@ -6997,7 +6997,7 @@
                 "pestphp/pest-dev-tools": "^4.0.0",
                 "pestphp/pest-plugin-browser": "^4.1.1",
                 "pestphp/pest-plugin-type-coverage": "^4.0.3",
-                "psy/psysh": "^0.12.14"
+                "psy/psysh": "^0.12.15"
             },
             "bin": [
                 "bin/pest"
@@ -7063,7 +7063,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/v4.1.5"
+                "source": "https://github.com/pestphp/pest/tree/v4.1.6"
             },
             "funding": [
                 {
@@ -7075,7 +7075,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-25T11:18:28+00:00"
+            "time": "2025-11-28T12:04:48+00:00"
         },
         {
             "name": "pestphp/pest-plugin",

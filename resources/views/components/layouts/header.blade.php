@@ -1,4 +1,4 @@
-<header class="bg-header h-24 flex items-center px-8">
+<header class="bg-header h-header flex flex-row items-center px-8">
   <!-- Logo a la izquierda -->
   <div class="shrink-0">
     <img src="{{ asset('images/logo-random.png') }}" class="w-20 h-20">
@@ -11,8 +11,8 @@
 
   <!-- Botones a la derecha -->
   <nav class="flex gap-4">
-    <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-gray-100">Login</button>
-    <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-gray-100">Register</button>
-    <button class="px-4 py-2 bg-white text-blue-500 rounded hover:bg-gray-100">English</button>
+    <button class="btn btn-primary px-4 py-2 ">Login</button>
+    <button class="btn btn-primary px-4 py-2 ">Register</button>
+    <button class="btn btn-primary px-4 py-2">English</button>
   </nav>
 </header>
