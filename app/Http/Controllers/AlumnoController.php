@@ -9,62 +9,63 @@ use Illuminate\Support\Facades\Schema;
 
 class AlumnoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        $alumnos = Alumno::all();
-        $campos = Schema::getColumnListing('alumnos');
-        
-        return view("alumnos.listado", ["alumnos"=>$alumnos]);
-    }
+  /**
+   * Display a listing of the resource.
+   */
+  public function index()
+  {
+    $alumnos = Alumno::all();
+    $campos = Schema::getColumnListing('alumnos');
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
+    return view("alumnos.listado", ["alumnos" => $alumnos]);
+  }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreAlumnoRequest $request)
-    {
-        //
-    }
+  /**
+   * Show the form for creating a new resource.
+   */
+  public function create()
+  {
+    return view('alumnos.create');
+  }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Alumno $alumno)
-    {
-        //
-    }
+  /**
+   * Store a newly created resource in storage.
+   */
+  public function store(StoreAlumnoRequest $request)
+  {
+    //
+  }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Alumno $alumno)
-    {
-        //
-    }
+  /**
+   * Display the specified resource.
+   */
+  public function show(Alumno $alumno)
+  {
+    //
+  }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateAlumnoRequest $request, Alumno $alumno)
-    {
-        //
-    }
+  /**
+   * Show the form for editing the specified resource.
+   */
+  public function edit(Alumno $alumno)
+  {
+    //
+  }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Alumno $alumno)
-    {
-        //
-    }
+  /**
+   * Update the specified resource in storage.
+   */
+  public function update(UpdateAlumnoRequest $request, Alumno $alumno)
+  {
+    //
+  }
+
+  /**
+   * Remove the specified resource from storage.
+   */
+  public function destroy(Alumno $alumno)
+  {
+    $alumno->delete(); // Borra el usuario de la base de datos
+    return redirect()->route('alumnos.index')->with('success', 'Usuario borrado correctamente');
+  }
 }
