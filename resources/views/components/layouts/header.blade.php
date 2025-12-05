@@ -11,7 +11,10 @@
 
   <!-- Botones a la derecha -->
   <nav class="flex gap-4">
-    <button class="btn btn-primary px-4 py-2 ">Login</button>
+    @guest
+      <a href="login"><button class="btn btn-primary px-4 py-2 ">Login
+      </button></a>
+    @endguest
     <button class="btn btn-primary px-4 py-2 ">Register</button>
     <button class="btn btn-primary px-4 py-2">English</button>
   </nav>
