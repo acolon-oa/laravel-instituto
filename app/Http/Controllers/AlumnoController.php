@@ -32,9 +32,15 @@ class AlumnoController extends Controller
    * Store a newly created resource in storage.
    */
   public function store(StoreAlumnoRequest $request)
-  {
-    //
-  }
+{
+    $datos = $request->validated();
+
+    $alumno = \App\Models\Alumno::create($datos);
+
+    return redirect()->route('alumnos.index')
+                     ->with('success', 'Alumno creado correctamente');
+}
+
 
   /**
    * Display the specified resource.
